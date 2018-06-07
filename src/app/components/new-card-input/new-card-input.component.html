@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-block">
+  <!--  <input type="text" placeholder="Take a note..." name="card-text" class="form-control" [value]="newCard.text" (input)="newCard.text = $event.target.value"> -->
+<form novalidate [formGroup]="newCardForm">
+  <input  placeholder="Take a note..." name="text" class="form-control" formControlName="text">
+</form>
+
+  </div>
+</div>
